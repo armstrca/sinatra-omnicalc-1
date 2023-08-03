@@ -1,0 +1,12 @@
+<!-- /views/payment_reults.erb -->
+<h1>Payment Results</h1>
+<div>APR</div>
+<dd><%= @aprpretty.to_f.round(5) %></dd>
+<div>Number of years</div>
+<dd><%= @years %></dd>
+<div>Principal</div>
+<dd><%= @principal.to_fs(:currency) %></dd>
+<div>Payment</div>
+
+<dd><%= @payment %></dd>
+<p><a href="/square/new">Calculate another payment</a>
